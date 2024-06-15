@@ -7,6 +7,8 @@ To install the theme, you need to clone the repository into your Hugo site's `th
 ```bash
 git clone https://github.com/akhuang/remark-hugo themes/remark-hugo
 
+git submodule add https://github.com/akhuang/remark-hugo.git themes/remark-hugo
+
 ```
 
 Then, add the following line to your site's `config.toml`:
