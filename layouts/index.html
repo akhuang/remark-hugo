@@ -1,0 +1,15 @@
+{{ define "main" }}
+ 
+	<div class="slides">
+		<h2>Slideshows:</h2>
+		<nav>
+			<ul>
+				{{ range .Pages }}
+					<li>
+						<a href="{{.RelPermalink}}">{{.Title}}</a>
+					</li>
+				{{ end }}
+			</ul>
+		</nav>
+	</div>
+{{ end }}

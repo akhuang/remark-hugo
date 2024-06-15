@@ -5,7 +5,7 @@ This is a simple theme for Hugo that is based on the [Remark](https://github.com
 To install the theme, you need to clone the repository into your Hugo site's `themes` directory:
 
 ```bash
-cd themes && git clone https://github.com/akhuang/remark-hugo themes/remark-hugo
+git clone https://github.com/akhuang/remark-hugo themes/remark-hugo
 
 ```
 
