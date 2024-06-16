@@ -4,10 +4,12 @@ This is a simple theme for Hugo that is based on the [Remark](https://github.com
 ## Installation
 To install the theme, you need to clone the repository into your Hugo site's `themes` directory:
 
-```bash
-git clone https://github.com/akhuang/remark-hugo themes/remark-hugo
-
+```bash 
+# add submodule to your site
 git submodule add https://github.com/akhuang/remark-hugo.git themes/remark-hugo
+
+# update
+git submodule update --init --recursive --remote
 
 ```
 
