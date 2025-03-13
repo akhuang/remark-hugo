@@ -2,6 +2,11 @@ body {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, 'source-han-serif-sc', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', serif;
 }
 
+/* body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0;
+  } */
+
 .remark-slide h1 {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, 'source-han-serif-sc', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', serif;
     font-size: 64px;
@@ -55,4 +60,248 @@ blockquote {
 
 blockquote h3 {
     text-align: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+ * 分栏样式
+*/
+.column-2 {
+    column-count: 2;
+    column-gap: 3em;
+    column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-2 p {
+    margin: 0;
+    padding: 0;
+}
+
+.column-3 {
+    column-count: 3;
+    column-gap: 3em;
+    column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-3 p {
+    margin: 0;
+    padding: 0;
+}
+
+.column-4 {
+    column-count: 4;
+    column-gap: 3em;
+    column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-4 p {
+    margin: 0;
+    padding: 0;
+}
+
+.column-5 {
+    column-count: 5;
+    column-gap: 3em;
+    column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-6 {
+    column-count: 6;
+    column-gap: 3em;
+    column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-norule,
+.column-norule {
+    column-gap: 2em;
+    column-rule: 0px;
+}
+
+.column-gap-sm,
+.nord-dark .column-gap-sm {
+    column-gap: 1em;
+    column-rule: 0px;
+}
+
+.column-gap-xs,
+.nord-dark .column-gap-xs {
+    column-gap: 0.5em;
+    column-rule: 0px;
+}
+
+/*
+ * 浮动布局
+*/
+.float-left {
+    float: left;
+}
+
+.float-left>img {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-right>img {
+    float: right;
+}
+
+.block-middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 字体间距 */
+.letter-spacing-0 {
+    letter-spacing: 0em;
+}
+
+.letter-spacing-10 {
+    letter-spacing: 0.1em;
+}
+
+.letter-spacing-20 {
+    letter-spacing: 0.2em;
+}
+
+.letter-spacing-30 {
+    letter-spacing: 0.3em;
+}
+
+.letter-spacing-40 {
+    letter-spacing: 0.4em;
+}
+
+.letter-spacing-50 {
+    letter-spacing: 0.5em;
+}
+
+.letter-spacing-60 {
+    letter-spacing: 0.6em;
+}
+
+.letter-spacing-70 {
+    letter-spacing: 0.7em;
+}
+
+.letter-spacing-80 {
+    letter-spacing: 0.8em;
+}
+
+.letter-spacing-90 {
+    letter-spacing: 0.9em;
+}
+
+.letter-spacing-100 {
+    letter-spacing: 1em;
+}
+
+/* table
+  *
+  * 100% 宽度，无背景色的 Table
+  * 可选样式：
+  *   st-hline 只显示横线
+  *   st-vline 只显示竖线
+  *   st-allline 横线和竖线都显示
+ */
+.st {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.st table {
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    border-spacing: 0;
+}
+
+.st table thead th {
+    color: #000;
+}
+
+.st table td,
+.st table th,
+.st table thead,
+.st table thead th,
+.st table tr {
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    background-color: transparent;
+}
+
+.st-allline table td:first-child,
+.st-allline table th:first-child,
+.st-vline table td:first-child,
+.st-vline table th:first-child {
+    border-left: 0;
+}
+
+.st-hline table thead th,
+.st-hline table thead th,
+.st-hline table tbody tr:not(:last-child) td,
+.st-hline table tbody tr:not(:last-child) td,
+.st-vline table tr:nth-last-child(2) th,
+.st-vline table thead tr:last-child th,
+.st-allline table tbody tr:not(:last-child) td,
+.st-allline table thead th {
+    border-bottom-width: 1px;
+    text-align: left;
+}
+
+.st-allline table td,
+.st-allline table thead th,
+.st-allline table th,
+.st-vline table td,
+.st-vline table thead th,
+.st-vline table th {
+    border-left-width: 1px;
+}
+
+.st.noborder {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0px;
+}
+
+.st.noborder table thead th {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom-width: 2px;
+}
+
+table th,
+table td,
+table th,
+table td,
+table caption {
+    border: 1px solid #ddd;
+    padding: 0.5em 1em;
+    color: #666;
+}
+
+table th,
+table th {
+    background: #fbfbfb;
+}
+
+table thead th,
+table thead th {
+    background: #f1f1f1;
+}
+
+table caption {
+    border-bottom: none;
 }
